@@ -1,0 +1,46 @@
+# Собранные бинарники и объектные файлы
+*.exe
+*.dll
+*.so
+*.dylib
+*.o
+*.obj
+*.a
+*.lib
+
+# Папки сборки CMake (ваши пресеты тоже там)
+build/
+out/
+bin/
+obj/
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+*.cmake
+!CMakeLists.txt
+
+# IDE и редакторы (VS Code)
+.vscode/
+.vs/
+*.user
+*.suo
+*.userprefs
+*.db
+*.ipr
+*.iws
+
+# Отладочные и временные файлы
+*.log
+*.tmp
+*.temp
+*.pdb
+*.ilk
+*.exp
+
+# macOS
+.DS_Store
+
+# Системные файлы Windows
+Thumbs.db
+desktop.ini
