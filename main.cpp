@@ -1,13 +1,15 @@
 #include <iostream>
 #include <vector>
 #include <gmpxx.h>
-#include "fibonacci.hpp"
+#include "Fibonacci/fibonacci.hpp"
+#include <filesystem>
 
 
 int main() {
     Fibonacci fib;
-    fib.CalculateNumbers(100);
-    fib.PrintNumbers();
+    fib.CalculateNumbers(1e5);
+    fib.SaveNumbers();
 
+    std::cout << "Done!" << "\n";
     return 0;
 }

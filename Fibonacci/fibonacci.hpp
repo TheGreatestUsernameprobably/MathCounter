@@ -2,6 +2,8 @@
 #include <iostream>
 #include <gmpxx.h>
 #include <vector>
+#include <fstream>
+#include <iomanip>
 
 class Fibonacci {
     private: 
@@ -9,4 +11,5 @@ class Fibonacci {
     public:
         void CalculateNumbers(unsigned int amount);
         void PrintNumbers() const;
+        void SaveNumbers() const;
 };
