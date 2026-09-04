@@ -44,3 +44,4 @@ Makefile
 # Системные файлы Windows
 Thumbs.db
 desktop.ini
+Fibonacci/fibonacci_numbers.txt
