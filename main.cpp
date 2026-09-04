@@ -1,13 +1,13 @@
 #include <iostream>
 #include <vector>
-#include<gmpxx.h>
+#include <gmpxx.h>
+#include "fibonacci.hpp"
 
 
 int main() {
-    std::cout << " idid something" << "\n";
-    mpz_class a("12332121332132132132131233");
-
-    std::cout << a << std::endl;
+    Fibonacci fib;
+    fib.CalculateNumbers(100);
+    fib.PrintNumbers();
 
     return 0;
 }
