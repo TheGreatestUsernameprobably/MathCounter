@@ -6,6 +6,7 @@
 #include <fstream>
 #include <string>
 #include "../FileUtils/file_utils.hpp"
+#include "../Counter/counter.hpp"
 
 class FileManager {
     protected:
@@ -28,6 +29,7 @@ class FileManager {
         virtual void WriteNumbers(const std::vector<mpz_class>& numbers) = 0;
         virtual void WriteHeader(std::fstream& file);
     public:
+        std::string system_name;
         std::string text_file_path;
         std::string bin_file_path;
         FileManager(const std::string& txt_path, const std::string& bin_path) : text_file_path(txt_path), bin_file_path(bin_path) {

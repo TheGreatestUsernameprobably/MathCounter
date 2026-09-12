@@ -37,3 +37,27 @@ void FileManager::WriteHeader(std::fstream& file) {
     file.write(reinterpret_cast<const char*>(&header.last_number_offset), sizeof(header.last_number_offset));
     file.write(reinterpret_cast<const char*>(&header.count), sizeof(header.count));
 }
+
+
+// void FileManager::WriteNumbers(const std::vector<mpz_class>& numbers) {
+//     for (size_t i = 0; i < numbers.size(); ++i) {
+//         const auto& line = numbers[i];
+//         // Saving fibonacci number index, byte length of number and it`s value
+//         uint32_t index = line.index;
+//         auto bytes = SerializeMPZ(line.value);
+//         uint64_t bytes_length = static_cast<uint32_t>(bytes.size());
+//         //std::cout << line.value << "\n";
+//         file.write(reinterpret_cast<const char*>(&index), sizeof(index));
+//         file.write(reinterpret_cast<const char*>(&bytes_length), sizeof(bytes_length));
+//         file.write(reinterpret_cast<const char*>(bytes.data()), bytes_length);
+
+//         uint64_t current_offset = file.tellp();
+//         if (i == cache.size()-1) {
+//             last_numer_bytes_offset = current_offset;
+//         }
+//         else if (i == cache.size()-2) {
+//             previous_numer_bytes_offset = current_offset;
+
+//         }
+//     }
+// }
