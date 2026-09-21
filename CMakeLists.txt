@@ -2,7 +2,8 @@ cmake_minimum_required(VERSION 3.10.0)
 project(MathCounter VERSION 0.1.0 LANGUAGES C CXX)
 
 add_executable(MathCounter main.cpp
-Fibonacci/fibonacci.cpp StringUtils/string_utils.cpp Counter/counter.cpp FileUtils/file_utils.cpp FileManager/file_manager.cpp CounterSystem/counter_system.cpp)
+Fibonacci/fibonacci.cpp StringUtils/string_utils.cpp Counter/counter.cpp FileUtils/file_utils.cpp FileManager/file_manager.cpp CounterSystem/counter_system.cpp
+Fibonacci/FibonacciCounter/fibonacci_counter.hpp)
 
 
 include(CTest)

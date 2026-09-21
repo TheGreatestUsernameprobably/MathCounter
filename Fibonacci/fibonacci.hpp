@@ -9,7 +9,7 @@
 #include <cstdint>
 
 
-class Fibonacci : public CounterSystem{
-    protected:
+// class Fibonacci : public CounterSystem{
+//     protected:
         
-};
+// };
